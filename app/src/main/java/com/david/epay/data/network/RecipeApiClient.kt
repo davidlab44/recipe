@@ -6,6 +6,6 @@ import retrofit2.http.GET
 
 interface RecipeApiClient {
     @GET("/.json")
-    suspend fun getALlRecipes(): Response<List<RecipeModel>>
+    suspend fun getAllRecipes(): Response<List<RecipeModel>>
 }
 
