@@ -1,4 +1,4 @@
-package com.david.epay
+package com.david.epay.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
