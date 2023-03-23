@@ -37,21 +37,21 @@ public final class RecipeDao_Impl implements RecipeDao {
     this.__insertionAdapterOfRecipeEntity = new EntityInsertionAdapter<RecipeEntity>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR REPLACE INTO `recipe_table` (`id`,`quote`,`author`) VALUES (nullif(?, 0),?,?)";
+        return "INSERT OR REPLACE INTO `recipe_table` (`id`,`copyright`,`date`) VALUES (nullif(?, 0),?,?)";
       }
 
       @Override
       public void bind(SupportSQLiteStatement stmt, RecipeEntity value) {
         stmt.bindLong(1, value.getId());
-        if (value.getQuote() == null) {
+        if (value.getCopyright() == null) {
           stmt.bindNull(2);
         } else {
-          stmt.bindString(2, value.getQuote());
+          stmt.bindString(2, value.getCopyright());
         }
-        if (value.getAuthor() == null) {
+        if (value.getDate() == null) {
           stmt.bindNull(3);
         } else {
-          stmt.bindString(3, value.getAuthor());
+          stmt.bindString(3, value.getDate());
         }
       }
     };
@@ -103,7 +103,7 @@ public final class RecipeDao_Impl implements RecipeDao {
 
   @Override
   public Object getAllRecipes(final Continuation<? super List<RecipeEntity>> continuation) {
-    final String _sql = "SELECT * FROM recipe_table ORDER BY author DESC";
+    final String _sql = "SELECT * FROM recipe_table";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
     return CoroutinesRoom.execute(__db, false, _cancellationSignal, new Callable<List<RecipeEntity>>() {
@@ -112,26 +112,26 @@ public final class RecipeDao_Impl implements RecipeDao {
         final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
         try {
           final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
-          final int _cursorIndexOfQuote = CursorUtil.getColumnIndexOrThrow(_cursor, "quote");
-          final int _cursorIndexOfAuthor = CursorUtil.getColumnIndexOrThrow(_cursor, "author");
+          final int _cursorIndexOfCopyright = CursorUtil.getColumnIndexOrThrow(_cursor, "copyright");
+          final int _cursorIndexOfDate = CursorUtil.getColumnIndexOrThrow(_cursor, "date");
           final List<RecipeEntity> _result = new ArrayList<RecipeEntity>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final RecipeEntity _item;
             final int _tmpId;
             _tmpId = _cursor.getInt(_cursorIndexOfId);
-            final String _tmpQuote;
-            if (_cursor.isNull(_cursorIndexOfQuote)) {
-              _tmpQuote = null;
+            final String _tmpCopyright;
+            if (_cursor.isNull(_cursorIndexOfCopyright)) {
+              _tmpCopyright = null;
             } else {
-              _tmpQuote = _cursor.getString(_cursorIndexOfQuote);
+              _tmpCopyright = _cursor.getString(_cursorIndexOfCopyright);
             }
-            final String _tmpAuthor;
-            if (_cursor.isNull(_cursorIndexOfAuthor)) {
-              _tmpAuthor = null;
+            final String _tmpDate;
+            if (_cursor.isNull(_cursorIndexOfDate)) {
+              _tmpDate = null;
             } else {
-              _tmpAuthor = _cursor.getString(_cursorIndexOfAuthor);
+              _tmpDate = _cursor.getString(_cursorIndexOfDate);
             }
-            _item = new RecipeEntity(_tmpId,_tmpQuote,_tmpAuthor);
+            _item = new RecipeEntity(_tmpId,_tmpCopyright,_tmpDate);
             _result.add(_item);
           }
           return _result;

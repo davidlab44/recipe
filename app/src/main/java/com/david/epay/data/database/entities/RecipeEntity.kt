@@ -10,9 +10,9 @@ import com.david.epay.domain.model.Recipe
 data class RecipeEntity(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id") val id: Int = 0,
-    @ColumnInfo(name = "quote") val quote: String,
-    @ColumnInfo(name = "author") val author: String
+    @ColumnInfo(name = "copyright") val copyright: String,
+    @ColumnInfo(name = "date") val date: String
 )
 
 
-fun Recipe.toDatabase() = RecipeEntity(quote = quote, author =  author)
+fun Recipe.toDatabase() = RecipeEntity(copyright = copyright, date =  date)

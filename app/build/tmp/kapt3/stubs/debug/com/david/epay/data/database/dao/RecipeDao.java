@@ -7,7 +7,7 @@ import java.lang.System;
 public abstract interface RecipeDao {
     
     @org.jetbrains.annotations.Nullable()
-    @androidx.room.Query(value = "SELECT * FROM recipe_table ORDER BY author DESC")
+    @androidx.room.Query(value = "SELECT * FROM recipe_table")
     public abstract java.lang.Object getAllRecipes(@org.jetbrains.annotations.NotNull()
     kotlin.coroutines.Continuation<? super java.util.List<com.david.epay.data.database.entities.RecipeEntity>> continuation);
     

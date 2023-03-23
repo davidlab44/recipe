@@ -36,12 +36,12 @@ public final class RecipeDatabase_Impl extends RecipeDatabase {
 
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(2) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `recipe_table` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `quote` TEXT NOT NULL, `author` TEXT NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `recipe_table` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `copyright` TEXT NOT NULL, `date` TEXT NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '0c7923842342dcfda000ea504117a6b5')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '4f4948b91cede60f83801f4cb8423c7c')");
       }
 
       @Override
@@ -87,8 +87,8 @@ public final class RecipeDatabase_Impl extends RecipeDatabase {
       public RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
         final HashMap<String, TableInfo.Column> _columnsRecipeTable = new HashMap<String, TableInfo.Column>(3);
         _columnsRecipeTable.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsRecipeTable.put("quote", new TableInfo.Column("quote", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsRecipeTable.put("author", new TableInfo.Column("author", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsRecipeTable.put("copyright", new TableInfo.Column("copyright", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsRecipeTable.put("date", new TableInfo.Column("date", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysRecipeTable = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesRecipeTable = new HashSet<TableInfo.Index>(0);
         final TableInfo _infoRecipeTable = new TableInfo("recipe_table", _columnsRecipeTable, _foreignKeysRecipeTable, _indicesRecipeTable);
@@ -100,7 +100,7 @@ public final class RecipeDatabase_Impl extends RecipeDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "0c7923842342dcfda000ea504117a6b5", "32965f4449a9ecdb7dc840979c3b4b73");
+    }, "4f4948b91cede60f83801f4cb8423c7c", "a89b95084c7ee415c74d6dbd0e081c9b");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

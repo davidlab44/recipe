@@ -9,7 +9,7 @@ import com.david.epay.data.database.entities.RecipeEntity
 @Dao
 interface RecipeDao {
 
-    @Query("SELECT * FROM recipe_table ORDER BY author DESC")
+    @Query("SELECT * FROM recipe_table")
     suspend fun getAllRecipes():List<RecipeEntity>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

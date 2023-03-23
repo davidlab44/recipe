@@ -1,6 +1,7 @@
 package com.david.epay.di
 
 import com.david.epay.data.network.RecipeApiClient
+import com.david.epay.util.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -17,7 +18,7 @@ object NetworkModule {
     @Provides
     fun provideRetrofit(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://drawsomething-59328-default-rtdb.europe-west1.firebasedatabase.app/")
+            .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
