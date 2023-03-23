@@ -4,12 +4,16 @@ import dagger.hilt.android.HiltAndroidApp;
 import dagger.hilt.internal.aggregatedroot.AggregatedRoot;
 
 /**
- * This class should only be referenced by generated code!This class aggregates information across multiple compilations.
+ * This class should only be referenced by generated code! This class aggregates information across multiple compilations.
  */
 @AggregatedRoot(
     root = "com.david.epay.Epay",
+    rootPackage = "com.david.epay",
     originatingRoot = "com.david.epay.Epay",
-    rootAnnotation = HiltAndroidApp.class
+    originatingRootPackage = "com.david.epay",
+    rootAnnotation = HiltAndroidApp.class,
+    rootSimpleNames = "Epay",
+    originatingRootSimpleNames = "Epay"
 )
 public class _com_david_epay_Epay {
 }

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.david.epay.app-mergeDebugResources-41:/values-pt-rPT/values-pt-rPT.xml",
+            "outputFile": "com.david.epay.app-mergeDebugResources-56:/values-pt-rPT/values-pt-rPT.xml",
             "map": [
                 {
-                    "source": "/home/mono/.gradle/caches/transforms-3/460a9917956ff8cc97bad8450ebdeb89/transformed/core-1.7.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "source": "/home/mono/.gradle/caches/transforms-3/538f75527814e63ca8c2bd74011381b1/transformed/core-1.8.0/res/values-pt-rPT/values-pt-rPT.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -13,15 +13,49 @@
                         "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "16",
+                        "startLines": "48",
                         "startColumns": "4",
-                        "startOffsets": "1321",
+                        "startOffsets": "4537",
                         "endColumns": "100",
-                        "endOffsets": "1417"
+                        "endOffsets": "4633"
                     }
                 },
                 {
-                    "source": "/home/mono/.gradle/caches/transforms-3/ce1aca37ea7058167b3bf520b206b066/transformed/ui-1.2.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "source": "/home/mono/.gradle/caches/transforms-3/f49d74f8d6ac8dcdd956efcfee92b044/transformed/preference-1.2.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "105,175,263,342,493,662,749",
+                        "endColumns": "69,87,78,150,168,86,80",
+                        "endOffsets": "170,258,337,488,657,744,825"
+                    },
+                    "to": {
+                        "startLines": "31,35,40,43,49,52,53",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "3026,3378,3830,4050,4638,5001,5088",
+                        "endColumns": "69,87,78,150,168,86,80",
+                        "endOffsets": "3091,3461,3904,4196,4802,5083,5164"
+                    }
+                },
+                {
+                    "source": "/home/mono/.gradle/caches/transforms-3/1e13a396fca7639865879d5868c3d5f1/transformed/appcompat-1.1.0/res/values-pt-rPT/values-pt-rPT.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,213,319,426,515,616,740,825,906,998,1091,1188,1282,1382,1476,1572,1667,1759,1851,1935,2042,2153,2255,2363,2471,2578,2749,2848",
+                        "endColumns": "107,105,106,88,100,123,84,80,91,92,96,93,99,93,95,94,91,91,83,106,110,101,107,107,106,170,98,84",
+                        "endOffsets": "208,314,421,510,611,735,820,901,993,1086,1183,1277,1377,1471,1567,1662,1754,1846,1930,2037,2148,2250,2358,2466,2573,2744,2843,2928"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,46",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,213,319,426,515,616,740,825,906,998,1091,1188,1282,1382,1476,1572,1667,1759,1851,1935,2042,2153,2255,2363,2471,2578,2749,4376",
+                        "endColumns": "107,105,106,88,100,123,84,80,91,92,96,93,99,93,95,94,91,91,83,106,110,101,107,107,106,170,98,84",
+                        "endOffsets": "208,314,421,510,611,735,820,901,993,1086,1183,1277,1377,1471,1567,1662,1754,1846,1930,2037,2148,2250,2358,2466,2573,2744,2843,4456"
+                    }
+                },
+                {
+                    "source": "/home/mono/.gradle/caches/transforms-3/b3bc7eea92f39bcdaddb84638f26f58b/transformed/ui-1.2.0/res/values-pt-rPT/values-pt-rPT.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -30,11 +64,11 @@
                         "endOffsets": "195,278,375,474,560,639,746,837,924,996,1065,1150,1240,1316,1388,1510"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,18",
+                        "startLines": "29,30,32,33,34,36,37,38,39,41,42,44,45,47,50,51",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,200,283,380,479,565,644,751,842,929,1001,1070,1155,1245,1422,1494",
+                        "startOffsets": "2848,2943,3096,3193,3292,3466,3545,3652,3743,3909,3981,4201,4286,4461,4807,4879",
                         "endColumns": "94,82,96,98,85,78,106,90,86,71,68,84,89,75,71,121",
-                        "endOffsets": "195,278,375,474,560,639,746,837,924,996,1065,1150,1240,1316,1489,1611"
+                        "endOffsets": "2938,3021,3188,3287,3373,3540,3647,3738,3825,3976,4045,4281,4371,4532,4874,4996"
                     }
                 }
             ]
