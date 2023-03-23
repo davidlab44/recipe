@@ -15,7 +15,7 @@ class RecipeViewModel @Inject constructor(
     //private val getRandomQuoteUseCase: GetRandomQuoteUseCase
 ) : ViewModel() {
 
-    val quoteModel = MutableLiveData<Recipe>()
+    val recipeModel = MutableLiveData<Recipe>()
     val isLoading = MutableLiveData<Boolean>()
 
     fun onCreate() {
@@ -24,8 +24,11 @@ class RecipeViewModel @Inject constructor(
             val result = getRecipesUseCase()
 
             if (!result.isNullOrEmpty()) {
-                quoteModel.postValue(result[0])
+                recipeModel.postValue(result[0])
                 isLoading.postValue(false)
+            }else{
+                val ve = "aqui"
+                val alla = "alla"
             }
         }
     }
