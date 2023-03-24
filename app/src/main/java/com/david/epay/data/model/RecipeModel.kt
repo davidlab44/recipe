@@ -1,8 +1,11 @@
 package com.david.epay.data.model
 
+import com.david.epay.domain.model.Coordinate
 import com.google.gson.annotations.SerializedName
 
 data class RecipeModel(
-    @SerializedName("copyright") val copyright: String,
-    @SerializedName("date") val date: String
+    @SerializedName("name") val name: String,
+    @SerializedName("image") val image: String,
+    @SerializedName("description") val description: String,
+    @SerializedName("coordinate") val coordinate: Coordinate
 )

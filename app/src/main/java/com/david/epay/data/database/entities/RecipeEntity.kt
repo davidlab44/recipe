@@ -1,8 +1,10 @@
 package com.david.epay.data.database.entities
 
 import androidx.room.ColumnInfo
+import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.david.epay.domain.model.Coordinate
 import com.david.epay.domain.model.Recipe
 
 
@@ -10,9 +12,11 @@ import com.david.epay.domain.model.Recipe
 data class RecipeEntity(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id") val id: Int = 0,
-    @ColumnInfo(name = "copyright") val copyright: String,
-    @ColumnInfo(name = "date") val date: String
+    @ColumnInfo(name = "name") val name: String,
+    @ColumnInfo(name = "image") val image: String,
+    @ColumnInfo(name = "description") val description: String,
+    @Embedded val coordinate: Coordinate
 )
 
 
-fun Recipe.toDatabase() = RecipeEntity(copyright = copyright, date =  date)
+fun Recipe.toDatabase() = RecipeEntity(name = name, image =  image, description = description, coordinate = coordinate)

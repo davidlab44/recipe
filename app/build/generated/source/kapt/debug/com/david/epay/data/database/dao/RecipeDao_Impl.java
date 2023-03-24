@@ -11,6 +11,7 @@ import androidx.room.util.CursorUtil;
 import androidx.room.util.DBUtil;
 import androidx.sqlite.db.SupportSQLiteStatement;
 import com.david.epay.data.database.entities.RecipeEntity;
+import com.david.epay.domain.model.Coordinate;
 import java.lang.Class;
 import java.lang.Exception;
 import java.lang.Object;
@@ -37,21 +38,34 @@ public final class RecipeDao_Impl implements RecipeDao {
     this.__insertionAdapterOfRecipeEntity = new EntityInsertionAdapter<RecipeEntity>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR REPLACE INTO `recipe_table` (`id`,`copyright`,`date`) VALUES (nullif(?, 0),?,?)";
+        return "INSERT OR REPLACE INTO `recipe_table` (`id`,`name`,`image`,`description`,`longitude`,`latitude`) VALUES (nullif(?, 0),?,?,?,?,?)";
       }
 
       @Override
       public void bind(SupportSQLiteStatement stmt, RecipeEntity value) {
         stmt.bindLong(1, value.getId());
-        if (value.getCopyright() == null) {
+        if (value.getName() == null) {
           stmt.bindNull(2);
         } else {
-          stmt.bindString(2, value.getCopyright());
+          stmt.bindString(2, value.getName());
         }
-        if (value.getDate() == null) {
+        if (value.getImage() == null) {
           stmt.bindNull(3);
         } else {
-          stmt.bindString(3, value.getDate());
+          stmt.bindString(3, value.getImage());
+        }
+        if (value.getDescription() == null) {
+          stmt.bindNull(4);
+        } else {
+          stmt.bindString(4, value.getDescription());
+        }
+        final Coordinate _tmpCoordinate = value.getCoordinate();
+        if (_tmpCoordinate != null) {
+          stmt.bindDouble(5, _tmpCoordinate.getLongitude());
+          stmt.bindDouble(6, _tmpCoordinate.getLatitude());
+        } else {
+          stmt.bindNull(5);
+          stmt.bindNull(6);
         }
       }
     };
@@ -112,26 +126,41 @@ public final class RecipeDao_Impl implements RecipeDao {
         final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
         try {
           final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
-          final int _cursorIndexOfCopyright = CursorUtil.getColumnIndexOrThrow(_cursor, "copyright");
-          final int _cursorIndexOfDate = CursorUtil.getColumnIndexOrThrow(_cursor, "date");
+          final int _cursorIndexOfName = CursorUtil.getColumnIndexOrThrow(_cursor, "name");
+          final int _cursorIndexOfImage = CursorUtil.getColumnIndexOrThrow(_cursor, "image");
+          final int _cursorIndexOfDescription = CursorUtil.getColumnIndexOrThrow(_cursor, "description");
+          final int _cursorIndexOfLongitude = CursorUtil.getColumnIndexOrThrow(_cursor, "longitude");
+          final int _cursorIndexOfLatitude = CursorUtil.getColumnIndexOrThrow(_cursor, "latitude");
           final List<RecipeEntity> _result = new ArrayList<RecipeEntity>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final RecipeEntity _item;
             final int _tmpId;
             _tmpId = _cursor.getInt(_cursorIndexOfId);
-            final String _tmpCopyright;
-            if (_cursor.isNull(_cursorIndexOfCopyright)) {
-              _tmpCopyright = null;
+            final String _tmpName;
+            if (_cursor.isNull(_cursorIndexOfName)) {
+              _tmpName = null;
             } else {
-              _tmpCopyright = _cursor.getString(_cursorIndexOfCopyright);
+              _tmpName = _cursor.getString(_cursorIndexOfName);
             }
-            final String _tmpDate;
-            if (_cursor.isNull(_cursorIndexOfDate)) {
-              _tmpDate = null;
+            final String _tmpImage;
+            if (_cursor.isNull(_cursorIndexOfImage)) {
+              _tmpImage = null;
             } else {
-              _tmpDate = _cursor.getString(_cursorIndexOfDate);
+              _tmpImage = _cursor.getString(_cursorIndexOfImage);
             }
-            _item = new RecipeEntity(_tmpId,_tmpCopyright,_tmpDate);
+            final String _tmpDescription;
+            if (_cursor.isNull(_cursorIndexOfDescription)) {
+              _tmpDescription = null;
+            } else {
+              _tmpDescription = _cursor.getString(_cursorIndexOfDescription);
+            }
+            final Coordinate _tmpCoordinate;
+            final double _tmpLongitude;
+            _tmpLongitude = _cursor.getDouble(_cursorIndexOfLongitude);
+            final double _tmpLatitude;
+            _tmpLatitude = _cursor.getDouble(_cursorIndexOfLatitude);
+            _tmpCoordinate = new Coordinate(_tmpLongitude,_tmpLatitude);
+            _item = new RecipeEntity(_tmpId,_tmpName,_tmpImage,_tmpDescription,_tmpCoordinate);
             _result.add(_item);
           }
           return _result;

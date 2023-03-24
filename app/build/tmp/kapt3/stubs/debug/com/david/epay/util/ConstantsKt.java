@@ -7,7 +7,7 @@ public final class ConstantsKt {
     @org.jetbrains.annotations.NotNull()
     private static final com.david.epay.domain.model.Coordinate HARDCODED_COORDINATE = null;
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String BASE_URL = "https://api.nasa.gov/planetary/";
+    public static final java.lang.String BASE_URL = "https://run.mocky.io/v3/";
     
     @org.jetbrains.annotations.NotNull()
     public static final com.david.epay.domain.model.Coordinate getHARDCODED_COORDINATE() {
