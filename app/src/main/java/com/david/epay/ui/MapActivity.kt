@@ -41,7 +41,7 @@ class MapActivity : ComponentActivity() {
 
 @Composable
 fun MyContent(longitude:Double,latitude:Double){
-    val mUrl = "${MAP_MARKER}=${longitude},${latitude}"
+    val mUrl = "$MAP_MARKER=$longitude,$latitude"
     AndroidView(factory = {
         WebView(it).apply {
             layoutParams = ViewGroup.LayoutParams(
