@@ -188,6 +188,7 @@ string selected
 string status_bar_notification_info_overflow
 string tab
 string template_percent
+string title_activity_map
 style DialogWindowTheme
 style FloatingDialogTheme
 style FloatingDialogWindowTheme

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:2:1-30:12
+ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:2:1-37:12
 MERGED from [androidx.compose.ui:ui-tooling:1.3.3] /home/mono/.gradle/caches/transforms-3/aeffffa48171ecb5d14936efa5814436/transformed/ui-tooling-1.3.3/AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.activity:activity-compose:1.6.1] /home/mono/.gradle/caches/transforms-3/88ab0b19000964faceae9bf24cf0fd01/transformed/activity-compose-1.6.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.compose.material3:material3:1.0.0-alpha11] /home/mono/.gradle/caches/transforms-3/9667288a368720d503e33fb332c1c4b0/transformed/material3-1.0.0-alpha11/AndroidManifest.xml:17:1-24:12
@@ -56,31 +56,31 @@ MERGED from [androidx.tracing:tracing:1.0.0] /home/mono/.gradle/caches/transform
 MERGED from [androidx.compose.ui:ui-util:1.3.3] /home/mono/.gradle/caches/transforms-3/dea2022f1d84a537cee3b5f4b5a1f4b2/transformed/ui-util-1.3.3/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/mono/.gradle/caches/transforms-3/cd5abf007c735796e9c421e8b136eb44/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.dagger:dagger-lint-aar:2.45] /home/mono/.gradle/caches/transforms-3/0896b754fb88d4016ff6e9e6c2593f7e/transformed/dagger-lint-aar-2.45/AndroidManifest.xml:16:1-19:12
-INJECTED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:2:1-37:12
 	package
 		INJECTED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml
-		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:2:1-30:12
+		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:2:1-37:12
 		INJECTED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml
-		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:2:1-30:12
+		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:2:1-37:12
 		INJECTED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml
-		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:2:1-30:12
+		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:2:1-37:12
 		INJECTED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:5:5-66
+ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:5:5-67
 	android:name
 		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:7:5-28:19
+ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:7:5-35:19
 MERGED from [androidx.compose.ui:ui-tooling:1.3.3] /home/mono/.gradle/caches/transforms-3/aeffffa48171ecb5d14936efa5814436/transformed/ui-tooling-1.3.3/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling:1.3.3] /home/mono/.gradle/caches/transforms-3/aeffffa48171ecb5d14936efa5814436/transformed/ui-tooling-1.3.3/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.3.3] /home/mono/.gradle/caches/transforms-3/35540876a74337ac5de2fbfee2c7164d/transformed/ui-test-manifest-1.3.3/AndroidManifest.xml:22:5-26:19
@@ -108,33 +108,47 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/mono/.gradle/caches/t
 	android:icon
 		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:8:9-35
+		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
 		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:15:9-42
 	android:dataExtractionRules
 		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:10:9-65
 	android:name
-		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:9:9-29
-activity#com.david.epay.ui.MainActivity
-ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:17:9-27:20
+		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:8:9-29
+activity#com.david.epay.MapActivity
+ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:17:9-21:49
 	android:label
-		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:20:13-45
+		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:20:13-55
 	android:exported
-		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:19:13-36
+		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:19:13-37
 	android:theme
 		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:21:13-46
 	android:name
-		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:18:13-44
+		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:18:13-40
+activity#com.david.epay.ui.MainActivity
+ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:22:9-32:20
+	android:label
+		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:25:13-45
+	android:exported
+		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:24:13-36
+	android:theme
+		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:26:13-46
+	android:name
+		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:23:13-44
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:22:13-26:29
+ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:27:13-31:29
 action#android.intent.action.MAIN
-ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:23:17-69
+ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:23:25-66
+		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:25:17-77
+ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:25:27-74
+		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:30:27-74
+activity#com.david.epay.ui.MapActivity
+ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:33:9-34:20
+	android:name
+		ADDED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml:33:19-63
 uses-sdk
 INJECTED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/mono/AndroidStudioProjects/Epay/app/src/main/AndroidManifest.xml

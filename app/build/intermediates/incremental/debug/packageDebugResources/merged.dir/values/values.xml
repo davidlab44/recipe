@@ -8,5 +8,6 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">Epay</string>
+    <string name="title_activity_map">MapActivity</string>
     <style name="Theme.Epay" parent="android:Theme.Material.Light.NoActionBar"/>
 </resources>

@@ -187,6 +187,7 @@ int string selected 0x7f0b000f
 int string status_bar_notification_info_overflow 0x7f0b0010
 int string tab 0x7f0b0011
 int string template_percent 0x7f0b0012
+int string title_activity_map 0x7f0b0013
 int style DialogWindowTheme 0x7f0c0000
 int style FloatingDialogTheme 0x7f0c0001
 int style FloatingDialogWindowTheme 0x7f0c0002
