@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.david.epay.app-mergeDebugResources-68:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "map": [
+                {
+                    "source": "/home/mono/.gradle/caches/transforms-3/648516e99e3a8e864d8309ab408f7f0c/transformed/material-1.6.0/res/values-ldrtl-v17/values-ldrtl-v17.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,191",
+                        "endColumns": "135,140",
+                        "endOffsets": "186,327"
+                    }
+                }
+            ]
+        }
+    ]
+}

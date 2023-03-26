@@ -1,30 +1,25 @@
 package com.david.epay.ui
 
-import android.content.Context
+
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.sp
-import androidx.core.content.ContextCompat
-import androidx.core.content.ContextCompat.startActivity
-import com.david.epay.data.RecipeRepository
+import com.david.epay.ui.navigation.Navigation
 import com.david.epay.ui.theme.EpayTheme
 import dagger.hilt.android.AndroidEntryPoint
-
+@ExperimentalFoundationApi
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
@@ -42,7 +37,8 @@ class MainActivity : ComponentActivity() {
                     val recipe = recipeViewModel.recipeModel
                     val dos = 2
                     //Greeting("Android")
-                    MainScreen()
+                    //MainScreen()
+                    Navigation(this)
                 }
             }
         }

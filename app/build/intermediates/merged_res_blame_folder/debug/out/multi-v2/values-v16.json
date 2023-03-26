@@ -1,8 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "com.david.epay.app-mergeDebugResources-47:/values-v16/values-v16.xml",
+            "outputFile": "com.david.epay.app-mergeDebugResources-68:/values-v16/values-v16.xml",
             "map": [
+                {
+                    "source": "/home/mono/.gradle/caches/transforms-3/89e7e6dc1ee077a6aa9ded02e1b32fff/transformed/appcompat-1.5.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
                 {
                     "source": "/home/mono/.gradle/caches/transforms-3/eee037569daaacc5df55ecf5ddcf2b93/transformed/core-1.9.0/res/values-v16/values-v16.xml",
                     "from": {
