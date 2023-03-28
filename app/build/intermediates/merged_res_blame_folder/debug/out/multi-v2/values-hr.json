@@ -4,6 +4,23 @@
             "outputFile": "com.david.epay.app-mergeDebugResources-68:/values-hr/values-hr.xml",
             "map": [
                 {
+                    "source": "/home/mono/.gradle/caches/transforms-3/301978e86070a8c87eb91ae84450a249/transformed/core-1.8.0/res/values-hr/values-hr.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "103",
+                        "startColumns": "4",
+                        "startOffsets": "8724",
+                        "endColumns": "100",
+                        "endOffsets": "8820"
+                    }
+                },
+                {
                     "source": "/home/mono/.gradle/caches/transforms-3/b2628e5f58c220b36604fe872d3958a6/transformed/ui-1.3.1/res/values-hr/values-hr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
@@ -54,23 +71,6 @@
                         "endLines": "6,34,35,36,37,43,44,45,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,98",
                         "endColumns": "12,84,95,129,83,67,95,67,62,107,65,55,70,59,53,125,56,61,53,74,133,84,80,106,83,85,90,66,65,73,77,87,71,76,79,73,92,72,91,95,73,75,95,51,66,86,86,61,63,62,105,100,96,103,79",
                         "endOffsets": "320,3116,3212,3342,3426,3969,4065,4133,4368,4476,4542,4598,4669,4729,4783,4909,4966,5028,5082,5157,5291,5376,5457,5564,5648,5734,5825,5892,5958,6032,6110,6198,6270,6347,6427,6501,6594,6667,6759,6855,6929,7005,7101,7153,7220,7307,7394,7456,7520,7583,7689,7790,7887,7991,8394"
-                    }
-                },
-                {
-                    "source": "/home/mono/.gradle/caches/transforms-3/eee037569daaacc5df55ecf5ddcf2b93/transformed/core-1.9.0/res/values-hr/values-hr.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "103",
-                        "startColumns": "4",
-                        "startOffsets": "8724",
-                        "endColumns": "100",
-                        "endOffsets": "8820"
                     }
                 }
             ]

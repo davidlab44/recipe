@@ -40,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "/home/mono/.gradle/caches/transforms-3/eee037569daaacc5df55ecf5ddcf2b93/transformed/core-1.9.0/res/values-mn/values-mn.xml",
+                    "source": "/home/mono/.gradle/caches/transforms-3/301978e86070a8c87eb91ae84450a249/transformed/core-1.8.0/res/values-mn/values-mn.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

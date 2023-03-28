@@ -2,7 +2,6 @@ package com.david.epay;
 
 import com.david.epay.di.NetworkModule;
 import com.david.epay.di.RoomModule;
-import com.david.epay.ui.MainActivity_GeneratedInjector;
 import com.david.epay.ui.RecipeViewModel_HiltModules;
 import dagger.Binds;
 import dagger.Component;
@@ -171,8 +170,7 @@ public final class Epay_HiltComponents {
       }
   )
   @ActivityScoped
-  public abstract static class ActivityC implements MainActivity_GeneratedInjector,
-      ActivityComponent,
+  public abstract static class ActivityC implements ActivityComponent,
       DefaultViewModelFactories.ActivityEntryPoint,
       HiltWrapper_HiltViewModelFactory_ActivityCreatorEntryPoint,
       FragmentComponentManager.FragmentComponentBuilderEntryPoint,

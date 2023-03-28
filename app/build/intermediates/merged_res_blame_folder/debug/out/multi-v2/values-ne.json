@@ -21,6 +21,23 @@
                     }
                 },
                 {
+                    "source": "/home/mono/.gradle/caches/transforms-3/301978e86070a8c87eb91ae84450a249/transformed/core-1.8.0/res/values-ne/values-ne.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "102",
+                        "startColumns": "4",
+                        "startOffsets": "8723",
+                        "endColumns": "100",
+                        "endOffsets": "8819"
+                    }
+                },
+                {
                     "source": "/home/mono/.gradle/caches/transforms-3/b2628e5f58c220b36604fe872d3958a6/transformed/ui-1.3.1/res/values-ne/values-ne.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
@@ -54,23 +71,6 @@
                         "endLines": "5,33,34,35,36,42,43,44,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,97",
                         "endColumns": "12,81,101,109,86,65,95,65,60,104,71,57,73,61,53,112,59,60,58,77,123,80,84,105,80,82,82,66,65,76,78,87,68,75,80,67,90,77,92,96,73,78,97,59,65,87,87,61,67,62,104,117,94,119,83",
                         "endOffsets": "262,3104,3206,3316,3403,3935,4031,4097,4336,4441,4513,4571,4645,4707,4761,4874,4934,4995,5054,5132,5256,5337,5422,5528,5609,5692,5775,5842,5908,5985,6064,6152,6221,6297,6378,6446,6537,6615,6708,6805,6879,6958,7056,7116,7182,7270,7358,7420,7488,7551,7656,7774,7869,7989,8378"
-                    }
-                },
-                {
-                    "source": "/home/mono/.gradle/caches/transforms-3/eee037569daaacc5df55ecf5ddcf2b93/transformed/core-1.9.0/res/values-ne/values-ne.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "102",
-                        "startColumns": "4",
-                        "startOffsets": "8723",
-                        "endColumns": "100",
-                        "endOffsets": "8819"
                     }
                 }
             ]

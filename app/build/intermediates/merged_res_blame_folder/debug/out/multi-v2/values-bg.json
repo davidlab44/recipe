@@ -4,6 +4,23 @@
             "outputFile": "com.david.epay.app-mergeDebugResources-68:/values-bg/values-bg.xml",
             "map": [
                 {
+                    "source": "/home/mono/.gradle/caches/transforms-3/301978e86070a8c87eb91ae84450a249/transformed/core-1.8.0/res/values-bg/values-bg.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "102",
+                        "startColumns": "4",
+                        "startOffsets": "8770",
+                        "endColumns": "100",
+                        "endOffsets": "8866"
+                    }
+                },
+                {
                     "source": "/home/mono/.gradle/caches/transforms-3/b2628e5f58c220b36604fe872d3958a6/transformed/ui-1.3.1/res/values-bg/values-bg.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
@@ -54,23 +71,6 @@
                         "endLines": "5,33,34,35,36,42,43,44,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,97",
                         "endColumns": "12,82,94,132,88,65,96,79,61,88,64,58,72,62,53,127,56,61,53,72,142,83,87,105,87,87,84,66,65,74,75,85,76,75,76,73,90,74,90,91,73,86,90,54,65,82,85,61,63,62,116,112,110,116,85",
                         "endOffsets": "265,3097,3192,3325,3414,3966,4063,4143,4372,4461,4526,4585,4658,4721,4775,4903,4960,5022,5076,5149,5292,5376,5464,5570,5658,5746,5831,5898,5964,6039,6115,6201,6278,6354,6431,6505,6596,6671,6762,6854,6928,7015,7106,7161,7227,7310,7396,7458,7522,7585,7702,7815,7926,8043,8437"
-                    }
-                },
-                {
-                    "source": "/home/mono/.gradle/caches/transforms-3/eee037569daaacc5df55ecf5ddcf2b93/transformed/core-1.9.0/res/values-bg/values-bg.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "102",
-                        "startColumns": "4",
-                        "startOffsets": "8770",
-                        "endColumns": "100",
-                        "endOffsets": "8866"
                     }
                 }
             ]

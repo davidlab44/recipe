@@ -19,7 +19,6 @@ import com.david.epay.di.RoomModule;
 import com.david.epay.di.RoomModule_ProvideQuoteDaoFactory;
 import com.david.epay.di.RoomModule_ProvideRoomFactory;
 import com.david.epay.domain.GetRecipesUseCase;
-import com.david.epay.ui.MainActivity;
 import com.david.epay.ui.RecipeViewModel;
 import com.david.epay.ui.RecipeViewModel_HiltModules_KeyModule_ProvideFactory;
 import dagger.hilt.android.ActivityRetainedLifecycle;
@@ -378,10 +377,6 @@ public final class DaggerEpay_HiltComponents_SingletonC {
       this.activityRetainedCImpl = activityRetainedCImpl;
 
 
-    }
-
-    @Override
-    public void injectMainActivity(MainActivity mainActivity) {
     }
 
     @Override
