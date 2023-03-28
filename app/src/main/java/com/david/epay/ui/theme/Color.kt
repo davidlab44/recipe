@@ -1,4 +1,4 @@
-package com.david.epay.ui.theme
+package com.david.epay.ui.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

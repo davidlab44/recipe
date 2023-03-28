@@ -29,7 +29,7 @@
             android:label="@string/title_activity_map"
             android:theme="@style/Theme.Epay" />
         <activity
-            android:name="com.david.epay.ui.presentation.MainActivity"
+            android:name="com.david.epay.ui.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Epay" >

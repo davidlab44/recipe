@@ -1,4 +1,4 @@
-package com.david.epay.ui.theme
+package com.david.epay.ui.ui.theme
 
 import android.app.Activity
 import android.os.Build
