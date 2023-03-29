@@ -1,9 +1,11 @@
 package com.david.epay.ui
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.Button
 import androidx.compose.material.Text
 import androidx.compose.material.TextField
@@ -19,6 +21,8 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.david.epay.util.RecipeList
+import androidx.compose.foundation.lazy.items
 
 @Composable
 fun Pantalla1(
@@ -33,6 +37,19 @@ fun Pantalla1(
         verticalArrangement = Arrangement.SpaceAround,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        val listModifier = Modifier
+            .fillMaxSize()
+            .background(Color.Gray)
+            .padding(10.dp)
+
+        val textStyle = TextStyle(fontSize = 20.sp, color = Color.White)
+
+        LazyColumn(modifier = listModifier) {
+            items(RecipeList) { country ->
+                Text(text = country.name, style = textStyle)
+            }
+        }
+
         Text(
             text = "PANTALLA 1",
             style = TextStyle(color = Color.Black, fontSize = 42.sp, fontWeight = FontWeight.Black)
