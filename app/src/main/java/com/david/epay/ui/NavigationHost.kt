@@ -10,7 +10,7 @@ import com.david.epay.domain.model.Recipe
 import com.david.epay.ui.Destinations.*
 
 @Composable
-fun NavigationHost(recipes: MutableLiveData<Recipe>) {
+fun NavigationHost(recipes:MutableLiveData<List<Recipe>>) {
 
     val navController = rememberNavController()
 
@@ -19,8 +19,10 @@ fun NavigationHost(recipes: MutableLiveData<Recipe>) {
             ScreenRecipeList(
                 navegarPantalla2 = { idRecipe ->
                     navController.navigate(DetailScreen.createRoute(idRecipe))
-                }
+                },
+                recipes
             )
+
         }
 
         composable(

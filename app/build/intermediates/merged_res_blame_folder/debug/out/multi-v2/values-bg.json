@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.david.epay.app-mergeDebugResources-68:/values-bg/values-bg.xml",
+            "outputFile": "com.david.epay.app-mergeDebugResources-69:/values-bg/values-bg.xml",
             "map": [
                 {
                     "source": "/home/mono/.gradle/caches/transforms-3/301978e86070a8c87eb91ae84450a249/transformed/core-1.8.0/res/values-bg/values-bg.xml",

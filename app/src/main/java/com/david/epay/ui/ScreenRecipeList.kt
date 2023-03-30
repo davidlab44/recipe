@@ -1,6 +1,7 @@
 package com.david.epay.ui
 
 
+import androidx.activity.viewModels
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -20,9 +21,21 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.rememberImagePainter
 import com.david.epay.util.RecipeList
+import androidx.activity.viewModels
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.Observer
+
+import androidx.lifecycle.viewModelScope
+import com.david.epay.domain.model.Recipe
+import kotlinx.coroutines.launch
 
 @Composable
-fun ScreenRecipeList(navegarPantalla2: (String) -> Unit) {
+fun ScreenRecipeList(navegarPantalla2: (String) -> Unit,recipes: MutableLiveData<List<Recipe>>) {
+
+    val  list  = recipes
+    val  list2  = recipes
+    //val vm = composableInstance.viewmodel as RecipeViewModel
+
     Column(
         modifier = Modifier.fillMaxSize().padding(16.dp),horizontalAlignment = Alignment.CenterHorizontally
     ) {

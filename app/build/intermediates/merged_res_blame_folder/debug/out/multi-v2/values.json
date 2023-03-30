@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.david.epay.app-mergeDebugResources-68:/values/values.xml",
+            "outputFile": "com.david.epay.app-mergeDebugResources-69:/values/values.xml",
             "map": [
                 {
                     "source": "/home/mono/.gradle/caches/transforms-3/5022e94ed1c09447760f338caa2dd37d/transformed/drawerlayout-1.1.1/res/values/values.xml",
@@ -77,6 +77,23 @@
                         "endLines": "71,7952,9237,9321",
                         "endColumns": "60,12,24,24",
                         "endOffsets": "3757,528606,585033,589549"
+                    }
+                },
+                {
+                    "source": "/home/mono/.gradle/caches/transforms-3/ca7e22083810d80c1707030da2407b1e/transformed/lifecycle-runtime-2.6.1/res/values/values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "42",
+                        "endOffsets": "93"
+                    },
+                    "to": {
+                        "startLines": "1436",
+                        "startColumns": "4",
+                        "startOffsets": "88712",
+                        "endColumns": "42",
+                        "endOffsets": "88750"
                     }
                 },
                 {
@@ -226,7 +243,7 @@
                     }
                 },
                 {
-                    "source": "/home/mono/.gradle/caches/transforms-3/e9eb5db0a7d6c9bd8484c5fd2266e36d/transformed/lifecycle-viewmodel-2.6.0/res/values/values.xml",
+                    "source": "/home/mono/.gradle/caches/transforms-3/067d05682189a10cb939a8415a768e8d/transformed/lifecycle-viewmodel-2.6.1/res/values/values.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -257,40 +274,6 @@
                         "startOffsets": "24966,41024,41071,41118,41862,41907,42115",
                         "endColumns": "41,46,46,46,44,44,41",
                         "endOffsets": "25003,41066,41113,41160,41902,41947,42152"
-                    }
-                },
-                {
-                    "source": "/home/mono/.gradle/caches/transforms-3/678855a67587473ae3c662f1904af9f5/transformed/lifecycle-runtime-2.6.0/res/values/values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "42",
-                        "endOffsets": "93"
-                    },
-                    "to": {
-                        "startLines": "1436",
-                        "startColumns": "4",
-                        "startOffsets": "88712",
-                        "endColumns": "42",
-                        "endOffsets": "88750"
-                    }
-                },
-                {
-                    "source": "/home/mono/.gradle/caches/transforms-3/747cc06692fc525e63caf9dd9c6184a9/transformed/savedstate-1.2.0/res/values/values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "53",
-                        "endOffsets": "104"
-                    },
-                    "to": {
-                        "startLines": "1438",
-                        "startColumns": "4",
-                        "startOffsets": "88815",
-                        "endColumns": "53",
-                        "endOffsets": "88864"
                     }
                 },
                 {
@@ -382,6 +365,23 @@
                         "startOffsets": "94469",
                         "endColumns": "82",
                         "endOffsets": "94547"
+                    }
+                },
+                {
+                    "source": "/home/mono/.gradle/caches/transforms-3/0f5a2bca67355d720a5a0254982012d4/transformed/savedstate-1.2.1/res/values/values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "53",
+                        "endOffsets": "104"
+                    },
+                    "to": {
+                        "startLines": "1438",
+                        "startColumns": "4",
+                        "startOffsets": "88815",
+                        "endColumns": "53",
+                        "endOffsets": "88864"
                     }
                 },
                 {
