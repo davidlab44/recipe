@@ -20,6 +20,7 @@ import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_compo
 import hilt_aggregated_deps._com_david_epay_Epay_GeneratedInjector;
 import hilt_aggregated_deps._com_david_epay_di_NetworkModule;
 import hilt_aggregated_deps._com_david_epay_di_RoomModule;
+import hilt_aggregated_deps._com_david_epay_ui_MainActivity_GeneratedInjector;
 import hilt_aggregated_deps._com_david_epay_ui_RecipeViewModel_HiltModules_BindsModule;
 import hilt_aggregated_deps._com_david_epay_ui_RecipeViewModel_HiltModules_KeyModule;
 import hilt_aggregated_deps._dagger_hilt_android_flags_FragmentGetContextFix_FragmentGetContextFixEntryPoint;
@@ -64,6 +65,7 @@ import hilt_aggregated_deps._dagger_hilt_android_internal_modules_HiltWrapper_Ac
         _com_david_epay_Epay_GeneratedInjector.class,
         _com_david_epay_di_NetworkModule.class,
         _com_david_epay_di_RoomModule.class,
+        _com_david_epay_ui_MainActivity_GeneratedInjector.class,
         _com_david_epay_ui_RecipeViewModel_HiltModules_BindsModule.class,
         _com_david_epay_ui_RecipeViewModel_HiltModules_KeyModule.class,
         _dagger_hilt_android_flags_FragmentGetContextFix_FragmentGetContextFixEntryPoint.class,

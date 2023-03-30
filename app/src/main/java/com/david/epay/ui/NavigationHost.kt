@@ -1,14 +1,16 @@
 package com.david.epay.ui
 
 import androidx.compose.runtime.Composable
+import androidx.lifecycle.MutableLiveData
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navArgument
 import androidx.navigation.compose.rememberNavController
+import com.david.epay.domain.model.Recipe
 import com.david.epay.ui.Destinations.*
 
 @Composable
-fun NavigationHost() {
+fun NavigationHost(recipes: MutableLiveData<Recipe>) {
 
     val navController = rememberNavController()
 
