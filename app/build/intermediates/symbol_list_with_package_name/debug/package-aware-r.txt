@@ -3149,6 +3149,7 @@ string m3_sys_motion_easing_linear
 string m3_sys_motion_easing_standard
 string m3_sys_motion_easing_standard_accelerate
 string m3_sys_motion_easing_standard_decelerate
+string map_button_text
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_selection

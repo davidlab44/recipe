@@ -6,7 +6,7 @@ import java.lang.System;
 public abstract interface RecipeApiClient {
     
     @org.jetbrains.annotations.Nullable()
-    @retrofit2.http.GET(value = "d5bb4884-e0f3-4698-8e41-9ae50eb8cb09")
+    @retrofit2.http.GET(value = "c57b730b-0764-4c0c-a1aa-da32b15982c9")
     public abstract java.lang.Object getAllRecipes(@org.jetbrains.annotations.NotNull()
     kotlin.coroutines.Continuation<? super retrofit2.Response<java.util.List<com.david.epay.data.model.RecipeModel>>> continuation);
 }
