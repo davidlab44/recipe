@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Epay</string>
     <string name="title_activity_map">MapActivity</string>
+    <string name="map_button_text">Ubicacion en el mapa</string>
 </resources>

@@ -5,7 +5,7 @@ import retrofit2.Response
 import retrofit2.http.GET
 
 interface RecipeApiClient {
-    @GET("d5bb4884-e0f3-4698-8e41-9ae50eb8cb09")
+    @GET("c57b730b-0764-4c0c-a1aa-da32b15982c9")
     suspend fun getAllRecipes(): Response<List<RecipeModel>>
 }
 

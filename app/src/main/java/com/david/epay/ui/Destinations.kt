@@ -3,8 +3,8 @@ package com.david.epay.ui
 sealed class Destinations(
     val route: String
 ) {
-    object Pantalla1: Destinations("pantalla1")
-    object Pantalla2: Destinations("pantalla2/?newText={newText}") {
-        fun createRoute(newText: String) = "pantalla2/?newText=$newText"
+    object RecipeListScreen: Destinations("pantalla1")
+    object DetailScreen: Destinations("pantalla2/?idRecipe={idRecipe}") {
+        fun createRoute(idRecipe: String) = "pantalla2/?idRecipe=$idRecipe"
     }
 }

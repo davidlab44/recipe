@@ -13,14 +13,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.viewinterop.AndroidView
 import com.david.epay.ui.ui.theme.EpayTheme
-
 import com.david.epay.util.MAP_MARKER
 
 class MapActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val longitude =  intent.extras!!.getDouble("longitude")
-        val latitude =  intent.extras!!.getDouble("longitude")
+        val bundle = intent.extras
+        val longitude = bundle!!.getDouble("longitude")
+        val latitude = bundle!!.getDouble("latitude")
         setContent {
             EpayTheme {
                 // A surface container using the 'background' color from the theme
@@ -28,7 +28,7 @@ class MapActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    MyContent(longitude,latitude)
+                    MapScreen(longitude,latitude)
                 }
             }
         }
@@ -36,8 +36,8 @@ class MapActivity : ComponentActivity() {
 }
 
 @Composable
-fun MyContent(longitude:Double,latitude:Double){
-    val mUrl = "$MAP_MARKER=$longitude,$latitude"
+fun MapScreen(longitude:Double, latitude:Double){
+    val mapUrl = "$MAP_MARKER=$longitude,$latitude"
     AndroidView(factory = {
         WebView(it).apply {
             layoutParams = ViewGroup.LayoutParams(
@@ -46,10 +46,10 @@ fun MyContent(longitude:Double,latitude:Double){
             )
             this.settings.javaScriptEnabled = true
             webViewClient = WebViewClient()
-            loadUrl(mUrl)
+            loadUrl(mapUrl)
         }
     }, update = {
-        it.loadUrl(mUrl)
+        it.loadUrl(mapUrl)
     })
 }
 

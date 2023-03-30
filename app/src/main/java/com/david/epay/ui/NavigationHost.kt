@@ -7,27 +7,27 @@ import androidx.navigation.compose.navArgument
 import androidx.navigation.compose.rememberNavController
 import com.david.epay.ui.Destinations.*
 
-
 @Composable
 fun NavigationHost() {
+
     val navController = rememberNavController()
 
-    NavHost(navController = navController, startDestination = Pantalla1.route) {
-        composable(Pantalla1.route) {
-            Pantalla1(
-                navegarPantalla2 = { newText ->
-                    navController.navigate(Pantalla2.createRoute(newText))
+    NavHost(navController = navController, startDestination = RecipeListScreen.route) {
+        composable(RecipeListScreen.route) {
+            ScreenRecipeList(
+                navegarPantalla2 = { idRecipe ->
+                    navController.navigate(DetailScreen.createRoute(idRecipe))
                 }
             )
         }
 
         composable(
-            Pantalla2.route,
-            arguments = listOf(navArgument("newText"){ defaultValue = "Pantalla 2" })
+            DetailScreen.route,
+            arguments = listOf(navArgument("idRecipe"){ defaultValue = "Pantalla 2" })
         ) { navBackStackEntry ->
-            var newText = navBackStackEntry.arguments?.getString("newText")
-            requireNotNull(newText)
-            Pantalla2(newText)
+            var idRecipe = navBackStackEntry.arguments?.getString("idRecipe")
+            requireNotNull(idRecipe)
+            ScreenDetail(idRecipe)
         }
     }
 }
