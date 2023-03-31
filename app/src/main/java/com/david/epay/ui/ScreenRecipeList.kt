@@ -1,7 +1,5 @@
 package com.david.epay.ui
 
-
-import androidx.activity.viewModels
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -20,28 +18,22 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.rememberImagePainter
-import com.david.epay.util.RecipeList
-import androidx.activity.viewModels
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.Observer
-
-import androidx.lifecycle.viewModelScope
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import com.david.epay.domain.model.Recipe
-import kotlinx.coroutines.launch
 
 @Composable
-fun ScreenRecipeList(navegarPantalla2: (String) -> Unit,recipes: MutableLiveData<List<Recipe>>) {
+fun ScreenRecipeList(navegarPantalla2: (String) -> Unit,recipeViewModel: List<Recipe>) {
 
-    val  list  = recipes
-    val  list2  = recipes
-    //val vm = composableInstance.viewmodel as RecipeViewModel
+    val recipes: List<Recipe> by remember {  mutableStateOf (recipeViewModel) }
 
     Column(
         modifier = Modifier.fillMaxSize().padding(16.dp),horizontalAlignment = Alignment.CenterHorizontally
     ) {
         val listModifier = Modifier.fillMaxSize().background(Color.White).padding(10.dp).align(Alignment.CenterHorizontally)
         LazyColumn(modifier = listModifier) {
-            items(RecipeList) { recipe ->
+            items(recipes) { recipe ->
                 Card(
                     modifier = Modifier.fillMaxWidth().padding(16.dp).clickable{ navegarPantalla2(recipe.id.toString()) },
                     elevation = 10.dp,

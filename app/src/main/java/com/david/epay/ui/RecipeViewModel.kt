@@ -1,8 +1,5 @@
 package com.david.epay.ui
 
-import androidx.compose.runtime.MutableState
-import androidx.compose.runtime.mutableStateOf
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -16,8 +13,7 @@ import javax.inject.Inject
 class RecipeViewModel @Inject constructor(
     private val getRecipesUseCase: GetRecipesUseCase) : ViewModel() {
 
-    //val recipeModel = MutableLiveData<Recipe>()
-    val recipeModel = MutableLiveData<List<Recipe>>()
+    var recipeModel = listOf<Recipe>()
 
     val isLoading = MutableLiveData<Boolean>()
     fun onCreate() {
@@ -25,7 +21,7 @@ class RecipeViewModel @Inject constructor(
             isLoading.postValue(true)
             val result = getRecipesUseCase()
             if (!result.isNullOrEmpty()) {
-                recipeModel.postValue(result)
+                recipeModel =result
                 isLoading.postValue(false)
             }else{
                 val y = true

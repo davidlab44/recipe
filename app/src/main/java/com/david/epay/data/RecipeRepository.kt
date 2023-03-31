@@ -20,8 +20,6 @@ class RecipeRepository @Inject constructor(
 
     suspend fun getAllRecipesFromDatabase():List<Recipe>{
         val response: List<RecipeEntity> = recipeDao.getAllRecipes()
-        val all = response.map { it.toDomain() }
-        val all2 = response.map { it.toDomain() }
         return response.map { it.toDomain() }
     }
 
